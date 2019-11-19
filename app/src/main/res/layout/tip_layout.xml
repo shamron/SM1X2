@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="7dp"
+    >
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:weightSum="4"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/league_header_layout"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/pink"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_league"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="EPL"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_kickoff"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="22nd Sep 17:00"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_teamA"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Real Madrid"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_vs"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:text="VS"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_teamB"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Barcelona"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/tip_layout_bg_ring"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_prediction"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/pink" />
+
+            <TextView
+                android:id="@+id/txt_odds"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2.02"
+                android:background="@drawable/txt_bg_round"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                 />
+
+            <TextView
+                android:id="@+id/txt_outcome"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
